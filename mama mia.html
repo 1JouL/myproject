@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mama Mia's Pizza Shop</title>
+    <script src="mama mia.js"></script>
+</head>
+<body>
+    <div style="background-color: rgb(221, 221, 150); margin-right: 20%; padding-bottom: 5%; padding-top: 1%; padding-left: 10%;">
+        <h1 style="color: red;">Welcome to Mama Mia's Pizza Shop</h1>
+
+        <div style="display: flex;">
+            <!-- Toppings Section -->
+            <div style="margin-left: 5%; border: solid red; padding: 2%;">
+                <b style="color: red;">Each Topping:  ₹ 50 </b><br>
+                <input type="checkbox" id="p1" value="50" onclick="enter(this)"> Tomato<br>
+                <input type="checkbox" id="p2" value="50" onclick="enter(this)"> Green Pepper<br>
+                <input type="checkbox" id="p3" value="50" onclick="enter(this)"> Black Olives<br>
+                <input type="checkbox" id="p4" value="50" onclick="enter(this)"> Mushroom<br>
+                <input type="checkbox" id="p5" value="50" onclick="enter(this)"> Extra Cheese<br>
+                <input type="checkbox" id="p6" value="50" onclick="enter(this)"> Pepperoni<br>
+                <input type="checkbox" id="p7" value="50" onclick="enter(this)"> Sausage<br>
+            </div>
+
+            <!-- Pizza Size Section -->
+            <div style="margin-left: 5%; border: solid red; padding: 2%;">
+                <b style="color: red;">Pizza Size:</b><br>
+                <input type="radio" name="size" id="q1" value="99" onclick="enter1(this)" > Small:₹99<br>
+                <input type="radio" name="size" id="q2" value="199" onclick="enter1(this)" > Medium:₹199<br>
+                <input type="radio" name="size" id="q3" value="299" onclick="enter1(this)" > Large:₹299<br>
+            </div>
+
+            <!-- Pizza Type Section -->
+            <div style="margin-left: 5%; border: solid red; padding: 2%;">
+                <b style="color: red;">Pizza Type:</b><br>
+                <input type="radio" name="type" id="t1" value="39" onclick="enter2(this)"> Thin Crust:₹39<br>
+                <input type="radio" name="type" id="t2" value="29" onclick="enter2(this)"> Medium:₹29 <br>
+                <input type="radio" name="type" id="t3" value="49" onclick="enter2(this)"> Pan:₹49<br>
+            </div>
+        </div>
+
+        <!-- Process Selection Button -->
+        <div style="display: flex;">
+            <div style="margin-top: 2%; margin-left: 30%;"> 
+                <input type="button" value="Process Selection" onclick="calculate()"  style="background-color: red; color: rgb(221, 221, 150); padding: 2% 2%; font-size: x-large;">
+            </div>
+        </div>
+        <br><br>
+
+        <b style="margin-left: 5%; color: red;">Your Order</b>
+        <div style="border: solid lightblue; padding: 2%; margin-right: 40%; margin-left: 4%; background-color: lightskyblue; padding-bottom: 2%;">
+            Pizza Type: <input type="text" id="demo2"><br><br>
+            Pizza Size: <input type="text" id="demo1"><br><br>
+            Topping: <input type="text" id="demo"><br><br>
+            Tax: <input type="text" id="demo5"><br><br>
+            Total: <input type="text" id="demo4">
+        </div>
+    </div>
+</body>
+</html>
